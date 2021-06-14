@@ -15,6 +15,4 @@ puts "The Joker"
 puts "Joffrey Baratheon"
 puts "Norman Bates"
 # Printing number of students
-print "Overall, we have"
-print student_count
-puts "great students"
+puts "Overall, we have #{student_count} great students"
