@@ -17,7 +17,7 @@ def input_students
         students << {name: name, cohort: coh.to_sym, birth_country: :England}
       end
     end
-    puts students.length < 2 ? "Now we have #{students.count} student" : "Now we have #{students.count} students"
+    puts students.length < 1 ? "Now we have #{students.count} student" : "Now we have #{students.count} students"
     name = gets.chomp
   end
   students
@@ -62,7 +62,7 @@ def specific_letter(names)
 end  
 #Method to print footer
 def print_footer(names)
-  puts "Overall, we have #{names.count} great students"
+  puts names.length == 0 ? "We have no students" : "Overall, we have #{names.count} great students"
 end
 
 # Main program
